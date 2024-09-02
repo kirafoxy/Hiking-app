@@ -2,7 +2,8 @@
 export default function ContentCard(props: any){
     return(
         
-        <div id={props.id} className={`container flex mx-auto mb-52 text-white items-center ${props.reverse ? "flex-row-reverse" : ""}`}> 
+        <div id={props.id} 
+        className={`container flex mx-auto mb-52 text-white items-center ${props.reverse ? "flex-row-reverse" : ""}`}> 
             <div>
                 <p className="absolute -mt-56 opacity-20 font-bold z-0 text-24xl ">{props.number}</p>
 
@@ -19,7 +20,7 @@ export default function ContentCard(props: any){
          
         </div>
 
-     //flex-row-reverse
+
     )
 }
 

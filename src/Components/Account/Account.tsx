@@ -1,28 +1,20 @@
-// import { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Offcanvas from 'react-bootstrap/Offcanvas';
-// import FormGroup from '../Form/Form';
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
-// function Account() {
-//   const [show, setShow] = useState(false);
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
 
-//   const handleClose = () => setShow(false);
-//   const handleShow = () => setShow(true);
+if (!PUBLISHABLE_KEY) {
+  throw new Error("Missing Publishable Key")
+}
 
-//   return (
-//     <>
-//       <Button variant="primary" onClick={handleShow}>
-//        Account 
-//       </Button>
-
-//       <Offcanvas show={show} onHide={handleClose} backdrop="static">
-//         <Offcanvas.Header closeButton>
-//           <Offcanvas.Title>Войдите в аккаунт</Offcanvas.Title>
-//         </Offcanvas.Header>
-//         <FormGroup/>
-//       </Offcanvas>
-//     </>
-//   );
-// }
-
-// export default Account;
+export default function Account() {
+  return (
+    <header>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </header>
+  );
+}

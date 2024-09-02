@@ -1,3 +1,4 @@
+
 import Header from "../Common/Header/Header";
 import HeroContent from "../Hero-content/HeroContent";
 import Slider from "../Slider";
@@ -10,6 +11,7 @@ export default function MainPage(){
             <Header/>
             <HeroContent/>
             <Slider/>
+        
         </div>
     )
 }

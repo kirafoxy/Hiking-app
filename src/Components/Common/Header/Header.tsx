@@ -1,7 +1,7 @@
 
 export default function Header(){
     return(
-        <div id="header" className='tracking-wide pb-52 pt-12 container flex flex-auto flex-row mx-auto leading-9'>
+        <div id="header" className='tracking-wide pb-52 pt-12  flex flex-row container mx-auto leading-9'>
 
             <a className='text-white font-light text-4xl font-abel scroll-smooth' href="#footer">MNTN</a> 
            

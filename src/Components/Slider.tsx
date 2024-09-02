@@ -2,7 +2,7 @@
 
 export default function Slider(){
     return(
-        <div className="text-white fixed bottom-80 tracking-wide container flex flex-col w-20 h-40  text-xl gap-y-10 font-abel items-end font-bold right-10 scroll-smooth ">
+        <div className="text-white fixed bottom-60 tracking-wide container flex flex-col w-20 h-40  text-xl gap-y-10 font-abel items-end font-bold right-10 scroll-smooth ">
             
             <a href="#contents" className="">Start</a>
 
@@ -21,4 +21,4 @@ export default function Slider(){
         </div>
     )
 }
-Slider()
+Slider
