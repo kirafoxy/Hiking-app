@@ -2,13 +2,14 @@
   "name": "mntn",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://kirafoxy.github.io/MNTN-tailwind",
+  "homepage": "https://kirafoxy.github.io/Hiking-app",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.4.5",
