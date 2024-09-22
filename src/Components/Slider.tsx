@@ -8,13 +8,13 @@ export default function Slider(){
 
             <ul className=" flex flex-col gap-y-10 ">
                 <li className="">
-                    <a href="#article-1">01</a>
+                    <a href="#article1">01</a>
                 </li>
                 <li className="">
-                    <a href="#article-2">02</a>
+                    <a href="#article2">02</a>
                 </li>
                 <li className="">
-                    <a href="#article-3">03</a>
+                    <a href="#article3">03</a>
                 </li>
                 
             </ul>
