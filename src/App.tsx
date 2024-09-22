@@ -1,16 +1,15 @@
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Footer from './Components/Common/Footer'
 import Content from './Components/Content/Content'
 import MainPage from './Components/MainPage/MainPage'
-import './index.css'
 import ArticleCard from './Components/Blog/ArticleCard';
+import './index.css'
+
 
 function App() {
-
   return (
     <div>
-      <BrowserRouter>
-       
+      <Router>
           <Routes>
             <Route path="/" element={
               <>
@@ -19,16 +18,15 @@ function App() {
                 <Footer />
               </>
             } />
-            <Route path="/article/:id" element={<ArticleCard />} />
+            <Route path="/article/:id" element={<ArticleCard id={''} preview={''} description={''} title={''} image={''} secondimg={''} />} />
           </Routes>
          
-    </BrowserRouter>
+    </Router>
 
     
     </div>
   )
 }
 
-export default App
-
+export default App;
 

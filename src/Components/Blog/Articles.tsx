@@ -14,6 +14,7 @@ export default function Articles(){
                 description={article.description}
                 title={article.title}
                 image={article.image}
+                secondimg={article.secondimg}
         
                 />
             </Link>
