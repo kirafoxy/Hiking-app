@@ -1,4 +1,5 @@
 # React + TypeScript + Vite
+Link to the site: https://kirafoxy.github.io/Hiking-app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
