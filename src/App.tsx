@@ -23,10 +23,9 @@ function App() {
                 <Footer />
               </>
             } />
-            <Route path="/article/:id" element={<ArticleCard />} />
-            <Route path="/article/:id" element={<ArticleCard />} />
-            <Route path="/aboutus" element={<AboutUs />} /> 
-            <Route path="/equipment" element={<Equipment />} /> 
+            <Route path={`${import.meta.env.BASE_URL}/article/:id`} element={<ArticleCard />} />
+            <Route path={`${import.meta.env.BASE_URL}/aboutus`} element={<AboutUs />} /> 
+            <Route path={`${import.meta.env.BASE_URL}/equipment`} element={<Equipment />} /> 
            
           </Routes>
          
