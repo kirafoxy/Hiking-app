@@ -1,28 +1,21 @@
-import ArticleCard from './ArticleCard';
+
 import { Link } from 'react-router-dom';
 import { articles } from '../Blog/ArticlesDetails';
 
-export default function Articles(){
-    return(
-        <div>
-            {articles.map((article)=>{
-                return(
-            <Link to={`/article/${article.id}`} key={article.id}>
-                <ArticleCard 
-                id={article.id}
-                preview={article.preview}
-                description={article.description}
-                title={article.title}
-                image={article.image}
-                secondimg={article.secondimg}
-        
-                />
-            </Link>
-                )
-            
-      }) }
-        </div>
-    )
-}
+export default function Articles() {
+    return (
+      <div>
+        {articles.map((article) => (
+          <Link to={`/article/${article.id}`} key={article.id}>
+            <div>
+              <h2>{article.title}</h2>
+              <p>{article.preview}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    );
+  }
+
 
 Articles()

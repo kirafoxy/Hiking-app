@@ -37,6 +37,7 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': "url('./assets/MNTN main-foto.png')",
+        'blog-pattern':"url('./assets/hiking_one_leg.jpg')",
       }
     },
   },
