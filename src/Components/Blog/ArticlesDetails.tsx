@@ -14,7 +14,7 @@ export const articles = [
     title :'What level of hiker are you?',
     subtitle: 'Get Started',
     preview: 'Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? ',
-    description: 
+    description:
     <div className="font-actor flex-col gap-4 items-center text-xl">
       <p className='mb-3'>
         Before embarking on any hiking adventure, it's essential to understand your own experience level. This self-awareness not only ensures your safety but also enhances the enjoyment of your hikes. Hiking levels are often categorized as novice, moderate, advanced moderate, expert, and expert backpacker.
