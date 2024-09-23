@@ -6,7 +6,7 @@ export default function Articles() {
     return (
       <div>
         {articles.map((article) => (
-          <Link to={`/article/${article.id}`} key={article.id}>
+          <Link to={`${import.meta.env.BASE_URL}/article/${article.id}`} key={article.id}>
             <div>
               <h2>{article.title}</h2>
               <p>{article.preview}</p>

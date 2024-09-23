@@ -9,7 +9,7 @@ export default function Content(){
         <div id='contents' className='-mt-48'>
             {articles.map((content, index)=>{
         return (
-            <Link to={`/article/${content.id}`} key={content.id}>
+            <Link to={`${import.meta.env.BASE_URL}/article/${content.id}`} key={content.id}>
             <ContentCard 
               id={content.id}
               key={index}

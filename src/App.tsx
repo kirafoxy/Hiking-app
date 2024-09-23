@@ -12,9 +12,9 @@ import Equipment from './Components/Equipment/Equipment';
 function App() {
   return (
     <div>
-      <Router>
+      <Router >
      
-          <Routes>
+          <Routes >
             <Route path={import.meta.env.BASE_URL} element={
               <>
                 <MainPage />
