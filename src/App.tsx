@@ -15,6 +15,10 @@ function App() {
       <Router >
      
           <Routes >
+
+            <Route path={`${import.meta.env.BASE_URL}/article/:id`} element={<ArticleCard />} />
+            <Route path={`${import.meta.env.BASE_URL}/aboutus`} element={<AboutUs />} /> 
+            <Route path={`${import.meta.env.BASE_URL}/equipment`} element={<Equipment />} /> 
             <Route path={import.meta.env.BASE_URL} element={
               <>
                 <MainPage />
@@ -22,11 +26,7 @@ function App() {
                 <hr className='mb-10  opacity-50 text-white'/>
                 <Footer />
               </>
-            } />
-            <Route path={`${import.meta.env.BASE_URL}/article/:id`} element={<ArticleCard />} />
-            <Route path={`${import.meta.env.BASE_URL}/aboutus`} element={<AboutUs />} /> 
-            <Route path={`${import.meta.env.BASE_URL}/equipment`} element={<Equipment />} /> 
-           
+            } />           
           </Routes>
          
     </Router>
