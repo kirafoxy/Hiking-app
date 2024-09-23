@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build-gh": "tsc -b && vite build --base=/Hiking-app/",
+    "build-gh": "tsc -b && vite build --base=/Hiking-app",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d build"
