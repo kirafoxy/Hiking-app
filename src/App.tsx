@@ -15,7 +15,7 @@ function App() {
       <Router>
      
           <Routes>
-            <Route path="/" element={
+            <Route path={import.meta.env.BASE_URL} element={
               <>
                 <MainPage />
                 <Content />
