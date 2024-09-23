@@ -6,15 +6,6 @@ import Social from '../Social';
 import { articles } from "./ArticlesDetails";
 import { useEffect } from "react";
 
-interface ArticleCardProps {
-    id: string;
-    preview: string;
-    description: string;
-    title: string;
-    image: string;
-    secondimg:string;
-    mountin:string;
-}
 
 export default function ArticleCard(){
     useEffect(() => {
