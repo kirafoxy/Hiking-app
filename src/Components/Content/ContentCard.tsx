@@ -16,9 +16,9 @@ export default function ContentCard(props: any){
                   <p className="font-actor text-lg">{props.preview}</p>
             
                   <Link
-                    className=" text-lg text-yellow after:content-[url('./assets/arrow_right.png')] after:align-middle after:ml-4"
+                    className=" text-lg text-yellow "
                     to={`/article/${props.id}`}>
-                    read more
+                    {/* read more after:content-[url('./assets/arrow_right.png')] after:align-middle after:ml-4 */}
                   </Link>
 
                 </div>
